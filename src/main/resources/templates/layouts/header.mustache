@@ -140,3 +140,10 @@
 </main>
 
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+{{#msg}}
+    <div class ="alert alert-primary alert-dismissible">
+        {{msg}}
+        <button type="button" class="btn-class" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+{{/msg}}
