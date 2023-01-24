@@ -19,8 +19,10 @@
     </tbody>
 </table>
 
-<a href="/articles/{{article.id}}/edit" class="btn btn-primary">Edit</a>
-<a href="/articles/{{article.id}}/delete" class="btn btn-danger">Delete</a>
+<a href="/articles/{{article.id}}/edit" class="btn btn-primary m-2">Edit</a>
+<a href="/articles/{{article.id}}/delete" class="btn btn-danger m-2">Delete</a>
 <a href="/articles" class="btn btn-primary">List</a>
+
+{{>comments/_comments}}
 
 {{>layouts/footer}}
