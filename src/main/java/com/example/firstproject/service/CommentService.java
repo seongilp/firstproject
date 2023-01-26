@@ -26,7 +26,6 @@ public class CommentService {
                 .map(comment -> CommentDto.createCommentDto(comment))
                 .collect(Collectors.toList());
     }
-
     @Transactional
     public CommentDto create(Long articleId, CommentDto dto) {
         Article article = articleRepository.findById(articleId).orElseThrow(() -> new IllegalArgumentException("댓글 생성 실패! 대상 게시글이 없습니다."));

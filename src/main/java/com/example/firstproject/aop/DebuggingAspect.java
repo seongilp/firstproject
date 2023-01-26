@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class DebuggingAspect {
     //
-    @Pointcut("execution(* com.example.firstproject.service.commentService.*(..))")
+    @Pointcut("execution(* com.example.firstproject.api.*.*(..))")
     private void cut() {}
     @Before("cut()")
     public void loggingArgs(JoinPoint joinPoint) {

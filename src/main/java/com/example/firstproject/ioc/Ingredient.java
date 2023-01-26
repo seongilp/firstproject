@@ -1,6 +1,6 @@
 package com.example.firstproject.ioc;
 
-public class Ingredient {
+public abstract class Ingredient {
     private String name;
 
     public Ingredient(String name) {
